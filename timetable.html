@@ -13,6 +13,12 @@
             a:hover {color:chartreuse; text-decoration: underline;}
         </style>
         
+        <style>
+            .text{
+                font-size: 20pt;
+            }
+    </style>
+        
     <style>
         table.type09 {
             border-collapse: collapse;
@@ -52,28 +58,30 @@
         </script>    
 
     <body>
-        <br/>
+        <span class="text"> 해당 과목을 누르시면 줌으로 이동합니다 </span> <br/>
             <table class="type09">
-                
-                <th scope="row" scope="col"><span style ="font-family:Arial">
+                <thead>
+                <th scope="row" scope="cols"><span style ="font-family:Arial">
                    시간&#92;요일</span> <!--역슬래쉬\ 이거 나타낼라믄 영어폰트 써야된다-->
                 </th>
                 
-                <th scope="col">
+                <th scope="cols">
                     월요일
                 </th>
-                <th scope="col">
+                <th scope="cols">
                     화요일
                 </th>
-                <th scope="col">
+                <th scope="cols">
                     수요일
                 </th>
-                <th scope="col">
+                <th scope="cols">
                     목요일
                 </th>
-                <th scope="col">
+                <th scope="cols">
                     금요일
                 </th>
+                    
+                </thead>
                 
             <tr>
                 <td scope="row">1교시</td>
@@ -161,8 +169,12 @@
         
         
         <!--시간 불러와서 지금 시간 해당하는 과목 글씨 굵게 표시하는 코드 짜기-->
+        <!--색 코드에서 #369=#336699이다-->
+        <!--샵 뒤에 6자리 숫자나 aabbcc형식의 경우 #abc로 간략하게 적는다-->
+        <!--주로 0 3 6 9 c f를 쓰는데 0이 가장 어둡고 f가 가장 밝다-->
+        <!-- #ABC이면 빨강값A 초록값B 파랑값C이다-->
         
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <br/>
         <input type="button" value="추가중"/><!--조례 8시 50분 종례--><br/>
         <span style="color:crimson"> 통과 주소 변경됨 (819 2020 5913 , dtja)</span> <br/>
         <span> 3월 16일 영어는 줌, 이후 구글 미트? 로 </span> <br/>
