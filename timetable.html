@@ -52,14 +52,230 @@
             }
         </style>
         
-    <script>
-        function addfeedback() {
-            var newfeedback = document.createelement("div");
-            varItem.innerHTML = document.getelementbyid("box").value;
-            document.getelementbyid("list").appendChild(newfeedback);
+    
+    
+    
+    
+    <script type=text/javascript>
+
+        var dt = new Date();
+        
+        var day = dt.getDay();
+        var hours = dt.getHours();
+        var minutes = dt.getMinutes();
+        var seconds = dt.getSeconds();
+                    
+        
+        window.onload = function(){
+            if (day==1){
+                if (hours==9){
+                    document.getElementById("mon.1").style.color = "#7868e6";
+                    document.getElementById("mon.1").style.fontWeight = "bold";
+                    document.getElementById("mon.1").style.background = "#f3f6f7";
+                } else if (hours==10){
+                    document.getElementById("mon.2").style.color = "#7868e6";
+                    document.getElementById("mon.2").style.fontWeight = "bold";
+                    document.getElementById("mon.2").style.background = "#f3f6f7";
+                } else if (hours==11){
+                    document.getElementById("mon.3").style.color = "green";
+                    document.getElementById("mon.3").style.fontWeight = "bold";
+                    document.getElementById("mon.3").style.background = "#f3f6f7";
+                } else if (hours==12){
+                    document.getElementById("mon.4").style.color = "#7868e6";
+                    document.getElementById("mon.4").style.fontWeight = "bold";
+                    document.getElementById("mon.4").style.background = "#f3f6f7";
+                } else if (hours==12 && minutes>=50){
+                    document.getElementById("mon.5").style.color = "#7868e6";
+                    document.getElementById("mon.5").style.fontWeight = "bold";
+                    document.getElementById("mon.5").style.background = "#f3f6f7";
+                } else if (hours==14 && minutes<=50){
+                    document.getElementById("mon.5").style.color = "#7868e6";
+                    document.getElementById("mon.5").style.fontWeight = "bold";
+                    document.getElementById("mon.5").style.background = "#f3f6f7";
+                } else if (hours==14 && minutes>=50){
+                    document.getElementById("mon.6").style.color = "#7868e6";
+                    document.getElementById("mon.6").style.fontWeight = "bold";
+                    document.getElementById("mon.6").style.background = "#f3f6f7";
+                } else if (hours==15 && minutes<=50){
+                    document.getElementById("mon.6").style.color = "#7868e6";
+                    document.getElementById("mon.6").style.fontWeight = "bold";
+                    document.getElementById("mon.6").style.background = "#f3f6f7";
+                } else if (hours==15 && minutes>=50){
+                    document.getElementById("mon.7").style.color = "#7868e6";
+                    document.getElementById("mon.7").style.fontWeight = "bold";
+                    document.getElementById("mon.7").style.background = "#f3f6f7";
+                } else if (hours==16 && minutes<=50){
+                    document.getElementById("mon.7").style.color = "#7868e6";
+                    document.getElementById("mon.7").style.fontWeight = "bold";
+                    document.getElementById("mon.7").style.background = "#f3f6f7";
+                }
+            } else if (day==2){
+                if (hours==9){
+                    document.getElementById("tue.1").style.color = "#7868e6";
+                    document.getElementById("tue.1").style.fontWeight = "bold";
+                    document.getElementById("tue.1").style.background = "#f3f6f7";
+                } else if (hours==10){
+                    document.getElementById("tue.2").style.color = "#7868e6";
+                    document.getElementById("tue.2").style.fontWeight = "bold";
+                    document.getElementById("tue.2").style.background = "#f3f6f7";
+                } else if (hours==11){
+                    document.getElementById("tue.3").style.color = "#7868e6";
+                    document.getElementById("tue.3").style.fontWeight = "bold";
+                    document.getElementById("tue.3").style.background = "#f3f6f7";
+                } else if (hours==12){
+                    document.getElementById("tue.4").style.color = "#7868e6";
+                    document.getElementById("tue.4").style.fontWeight = "bold";
+                    document.getElementById("tue.4").style.background = "#f3f6f7";
+                } else if (hours==12 && minutes>=50){
+                    document.getElementById("tue.5").style.color = "#7868e6";
+                    document.getElementById("tue.5").style.fontWeight = "bold";
+                    document.getElementById("tue.5").style.background = "#f3f6f7";
+                } else if (hours==14 && minutes<=50){
+                    document.getElementById("tue.5").style.color = "#7868e6";
+                    document.getElementById("tue.5").style.fontWeight = "bold";
+                    document.getElementById("tue.5").style.background = "#f3f6f7";
+                } else if (hours==14 && minutes>=50){
+                    document.getElementById("tue.6").style.color = "green";
+                    document.getElementById("tue.6").style.fontWeight = "bold";
+                    document.getElementById("tue.6").style.background = "#f3f6f7";
+                } else if (hours==15 && minutes<=50){
+                    document.getElementById("tue.6").style.color = "green";
+                    document.getElementById("tue.6").style.fontWeight = "bold";
+                    document.getElementById("tue.6").style.background = "#f3f6f7";
+                } else if (hours==15 && minutes>=50){
+                    document.getElementById("tue.7").style.color = "#7868e6";
+                    document.getElementById("tue.7").style.fontWeight = "bold";
+                    document.getElementById("tue.7").style.background = "#f3f6f7";
+                } else if (hours==16 && minutes<=50){
+                    document.getElementById("tue.7").style.color = "#7868e6";
+                    document.getElementById("tue.7").style.fontWeight = "bold";
+                    document.getElementById("tue.7").style.background = "#f3f6f7";
+                }
+            } else if (day==3){
+                if (hours==9){
+                    document.getElementById("wed.1").style.color = "#7868e6";
+                    document.getElementById("wed.1").style.fontWeight = "bold";
+                    document.getElementById("wed.1").style.background = "#f3f6f7";
+                } else if (hours==10){
+                    document.getElementById("wed.2").style.color = "#7868e6";
+                    document.getElementById("wed.2").style.fontWeight = "bold";
+                    document.getElementById("wed.2").style.background = "#f3f6f7";
+                } else if (hours==11){
+                    document.getElementById("wed.3").style.color = "#7868e6";
+                    document.getElementById("wed.3").style.fontWeight = "bold";
+                    document.getElementById("wed.3").style.background = "#f3f6f7";
+                } else if (hours==12){
+                    document.getElementById("wed.4").style.color = "#7868e6";
+                    document.getElementById("wed.4").style.fontWeight = "bold";
+                    document.getElementById("wed.4").style.background = "#f3f6f7";
+                } else if (hours==12 && minutes>=50){
+                    document.getElementById("wed.5").style.color = "#7868e6";
+                    document.getElementById("wed.5").style.fontWeight = "bold";
+                    document.getElementById("wed.5").style.background = "#f3f6f7";
+                } else if (hours==14 && minutes<=50){
+                    document.getElementById("wed.5").style.color = "#7868e6";
+                    document.getElementById("wed.5").style.fontWeight = "bold";
+                    document.getElementById("wed.5").style.background = "#f3f6f7";
+                } else if (hours==14 && minutes>=50){
+                    document.getElementById("wed.6").style.color = "#7868e6";
+                    document.getElementById("wed.6").style.fontWeight = "bold";
+                    document.getElementById("wed.6").style.background = "#f3f6f7";
+                } else if (hours==15 && minutes<=50){
+                    document.getElementById("wed.6").style.color = "#7868e6";
+                    document.getElementById("wed.6").style.fontWeight = "bold";
+                    document.getElementById("wed.6").style.background = "#f3f6f7";
+                }
+
+            } else if (day==4){
+                if (hours==9){
+                    document.getElementById("thu.1").style.color = "#7868e6";
+                    document.getElementById("thu.1").style.fontWeight = "bold";
+                    document.getElementById("thu.1").style.background = "#f3f6f7";
+                } else if (hours==10){
+                    document.getElementById("thu.2").style.color = "#7868e6";
+                    document.getElementById("thu.2").style.fontWeight = "bold";
+                    document.getElementById("thu.2").style.background = "#f3f6f7";
+                } else if (hours==11){
+                    document.getElementById("thu.3").style.color = "#7868e6";
+                    document.getElementById("thu.3").style.fontWeight = "bold";
+                    document.getElementById("thu.3").style.background = "#f3f6f7";
+                } else if (hours==12){
+                    document.getElementById("thu.4").style.color = "#7868e6";
+                    document.getElementById("thu.4").style.fontWeight = "bold";
+                    document.getElementById("thu.4").style.background = "#f3f6f7";
+                } else if (hours==12 && minutes>=50){
+                    document.getElementById("thu.5").style.color = "#7868e6";
+                    document.getElementById("thu.5").style.fontWeight = "bold";
+                    document.getElementById("thu.5").style.background = "#f3f6f7";
+                } else if (hours==14 && minutes<=50){
+                    document.getElementById("thu.5").style.color = "#7868e6";
+                    document.getElementById("thu.5").style.fontWeight = "bold";
+                    document.getElementById("thu.5").style.background = "#f3f6f7";
+                } else if (hours==14 && minutes>=50){
+                    document.getElementById("thu.6").style.color = "#7868e6";
+                    document.getElementById("thu.6").style.fontWeight = "bold";
+                    document.getElementById("thu.6").style.background = "#f3f6f7";
+                } else if (hours==15 && minutes<=50){
+                    document.getElementById("thu.6").style.color = "#7868e6";
+                    document.getElementById("thu.6").style.fontWeight = "bold";
+                    document.getElementById("thu.6").style.background = "#f3f6f7";
+                } else if (hours==15 && minutes>=50){
+                    document.getElementById("thu.7").style.color = "#7868e6";
+                    document.getElementById("thu.7").style.fontWeight = "bold";
+                    document.getElementById("thu.7").style.background = "#f3f6f7";
+                } else if (hours==16 && minutes<=50){
+                    document.getElementById("thu.7").style.color = "#7868e6";
+                    document.getElementById("thu.7").style.fontWeight = "bold";
+                    document.getElementById("thu.7").style.background = "#f3f6f7";
+                }
+            } else if (day==5){
+                if (hours==9){
+                    document.getElementById("fri.1").style.color = "#7868e6";
+                    document.getElementById("fri.1").style.fontWeight = "bold";
+                    document.getElementById("fri.1").style.background = "#f3f6f7";
+                } else if (hours==10){
+                    document.getElementById("fri.2").style.color = "#7868e6";
+                    document.getElementById("fri.2").style.fontWeight = "bold";
+                    document.getElementById("fri.2").style.background = "#f3f6f7";
+                } else if (hours==11){
+                    document.getElementById("fri.3").style.color = "#7868e6";
+                    document.getElementById("fri.3").style.fontWeight = "bold";
+                    document.getElementById("fri.3").style.background = "#f3f6f7";
+                } else if (hours==12){
+                    document.getElementById("fri.4").style.color = "#7868e6";
+                    document.getElementById("fri.4").style.fontWeight = "bold";
+                    document.getElementById("fri.4").style.background = "#f3f6f7";
+                } else if (hours==12 && minutes>=50){
+                    document.getElementById("fri.5").style.color = "red";
+                    document.getElementById("fri.5").style.fontWeight = "bold";
+                    document.getElementById("fri.5").style.background = "#f3f6f7";
+                } else if (hours==14 && minutes<=50){
+                    document.getElementById("fri.5").style.color = "red";
+                    document.getElementById("fri.5").style.fontWeight = "bold";
+                    document.getElementById("fri.5").style.background = "#f3f6f7";
+                } else if (hours==14 && minutes>=50){
+                    document.getElementById("fri.6").style.color = "red";
+                    document.getElementById("fri.6").style.fontWeight = "bold";
+                    document.getElementById("fri.6").style.background = "#f3f6f7";
+                } else if (hours==15 && minutes<=50){
+                    document.getElementById("fri.6").style.color = "red";
+                    document.getElementById("fri.6").style.fontWeight = "bold";
+                    document.getElementById("fri.6").style.background = "#f3f6f7";
+                }   
+            }
         }
+        
+
+    //if 안에 if문을 넣어 화요일에, 첫 if 구문(9시)를 판단하고 참이면 실행.
+    // 거짓일 시 다음 else if 구문으로 넘어가 판단. 순서대로 진행됨
+    // 참일 시 실행과 중지, 거짓일 시 다음구문.
         </script>    
 
+    
+    
+    
+    
+    
     <body>
         <span class="text"> 해당 과목을 누르시면 줌으로 이동합니다 </span> <br/>
             <table class="type09">
@@ -89,41 +305,41 @@
             <tr>
                 <td class="row" scope="row">1교시</td>
         
-                <td><a href="https://zoom.us/j/9908592309?pwd=ZUw5Nys4OHlqaUYvbEtoQmI0VkN5dz09" style="text/css">한국</a></td>
-                <td><a href="https://zoom.us/j/9219070512?pwd=L0dHT0hkeFNUWXNTSzNoaEQ1NGFldz09" style="text/css">통사</a></td>
-                <td><a href="https://us02web.zoom.us/j/86253700147?pwd=Mmw5ZDU3NlA1L21GM2FsNTlpTm1iUT09" style="text/css">한문1</a></td>
-                <td><a href="https://us02web.zoom.us/j/81920205913?pwd=WFJKditYbzFyd1V1ampsM3hKcng1Zz09" style="test/css">통과</a></td>
-                <td><a href="https://zoom.us/j/96410531025?pwd=ZTBHTjdHSW5UT1hKTDAyYkhhZ0Y5QT09" style="test/css">음악</a></td>
+                <td><a href="https://zoom.us/j/9908592309?pwd=ZUw5Nys4OHlqaUYvbEtoQmI0VkN5dz09" id ="mon.1">한국</a></td>
+                <td><a href="https://zoom.us/j/9219070512?pwd=L0dHT0hkeFNUWXNTSzNoaEQ1NGFldz09" id ="tue.1">통사</a></td>
+                <td><a href="https://us02web.zoom.us/j/86253700147?pwd=Mmw5ZDU3NlA1L21GM2FsNTlpTm1iUT09" id ="wed.1">한문1</a></td>
+                <td><a href="https://us02web.zoom.us/j/81920205913?pwd=WFJKditYbzFyd1V1ampsM3hKcng1Zz09" id ="thu.1">통과</a></td>
+                <td><a href="https://zoom.us/j/96410531025?pwd=ZTBHTjdHSW5UT1hKTDAyYkhhZ0Y5QT09" id ="fri.1">음악</a></td>
             </tr>
                 
             <tr>
                 <td class="row" scope="row">2교시</td>
                 
-                <td><a href="https://us02web.zoom.us/j/6728478239?pwd=UkdIN1Z4ZnZ6aHZYYjFvcFZ5NEFWUT09" style="text/css">체육</a></td>
-                <td><a href="https://zoom.us/j/9908592309?pwd=ZUw5Nys4OHlqaUYvbEtoQmI0VkN5dz09" style="text/css">한국</a></td>
-                <td><a href="https://zoom.us/j/9219070512?pwd=L0dHT0hkeFNUWXNTSzNoaEQ1NGFldz09" style="text/css">통사</a></td>
-                <td><a href="https://classroom.google.com/c/MjgzOTY2Mjk3OTA1" style="text/css">영어</a></td>
-                <td><a href="https://us02web.zoom.us/j/6728478239?pwd=UkdIN1Z4ZnZ6aHZYYjFvcFZ5NEFWUT09">체육</a></td>
+                <td><a href="https://us02web.zoom.us/j/6728478239?pwd=UkdIN1Z4ZnZ6aHZYYjFvcFZ5NEFWUT09" id ="mon.2">체육</a></td>
+                <td><a href="https://zoom.us/j/9908592309?pwd=ZUw5Nys4OHlqaUYvbEtoQmI0VkN5dz09" id ="tue.2">한국</a></td>
+                <td><a href="https://zoom.us/j/9219070512?pwd=L0dHT0hkeFNUWXNTSzNoaEQ1NGFldz09" id ="wed.1">통사</a></td>
+                <td><a href="https://classroom.google.com/c/MjgzOTY2Mjk3OTA1" id ="thu.2">영어</a></td>
+                <td><a href="https://us02web.zoom.us/j/6728478239?pwd=UkdIN1Z4ZnZ6aHZYYjFvcFZ5NEFWUT09" id ="fri.2">체육</a></td>
             </tr>
                 
             <tr>
                 <td class="row" scope="row">3교시</td>
                 
-                <td><span style="color:grey">한문1</span></td>
-                <td><a href="https://zoom.us/j/9041636076?pwd=YktXamVvZVpFVStBd0QwdXZLd1Z0QT09" style="text/css">수학</a></td>
-                <td><a href="https://zoom.us/j/9641411259?pwd=cjMxYUFJYXJPQ0FZTGZ4ZEVRcjVmUT09" style="text/css">국어</a></td>
-                <td><a href="https://zoom.us/j/9641411259?pwd=cjMxYUFJYXJPQ0FZTGZ4ZEVRcjVmUT09" style="text/css">국어</a></td>
-                <td><a href="https://zoom.us/j/9908592309?pwd=ZUw5Nys4OHlqaUYvbEtoQmI0VkN5dz09" style="text/css">한국</a></td>
+                <td><span style="color:grey" id ="mon.3">한문1</span></td>
+                <td><a href="https://zoom.us/j/9041636076?pwd=YktXamVvZVpFVStBd0QwdXZLd1Z0QT09" id ="tue.3">수학</a></td>
+                <td><a href="https://zoom.us/j/9641411259?pwd=cjMxYUFJYXJPQ0FZTGZ4ZEVRcjVmUT09" id ="wed.1">국어</a></td>
+                <td><a href="https://zoom.us/j/9641411259?pwd=cjMxYUFJYXJPQ0FZTGZ4ZEVRcjVmUT09" id ="thu.3">국어</a></td>
+                <td><a href="https://zoom.us/j/9908592309?pwd=ZUw5Nys4OHlqaUYvbEtoQmI0VkN5dz09" id ="fri.3">한국</a></td>
             </tr>
                 
             <tr>
                 <td class="row" scope="row">4교시</td>
                 
-                <td><a href="https://zoom.us/j/2286643162?pwd=UThhdkw2Mkl5RUQxS1pqZys2QncvUT09" style="text/css">진로</a></td>
-                <td><a href="https://zoom.us/j/9641411259?pwd=cjMxYUFJYXJPQ0FZTGZ4ZEVRcjVmUT09" style="text/css">국어</a></td>
-                <td><a href="https://us02web.zoom.us/j/81920205913?pwd=WFJKditYbzFyd1V1ampsM3hKcng1Zz09">통과</a></td>
-                <td><a href="https://zoom.us/j/9041636076?pwd=YktXamVvZVpFVStBd0QwdXZLd1Z0QT09" style="text/css">수학</a></td>
-                <td><a href="https://zoom.us/j/9041636076?pwd=YktXamVvZVpFVStBd0QwdXZLd1Z0QT09" style="text/css">수학</a></td>
+                <td><a href="https://zoom.us/j/2286643162?pwd=UThhdkw2Mkl5RUQxS1pqZys2QncvUT09" id ="mon.4">진로</a></td>
+                <td><a href="https://zoom.us/j/9641411259?pwd=cjMxYUFJYXJPQ0FZTGZ4ZEVRcjVmUT09" id ="tue.4">국어</a></td>
+                <td><a href="https://us02web.zoom.us/j/81920205913?pwd=WFJKditYbzFyd1V1ampsM3hKcng1Zz09" id ="wed.1">통과</a></td>
+                <td><a href="https://zoom.us/j/9041636076?pwd=YktXamVvZVpFVStBd0QwdXZLd1Z0QT09" id ="thu.4">수학</a></td>
+                <td><a href="https://zoom.us/j/9041636076?pwd=YktXamVvZVpFVStBd0QwdXZLd1Z0QT09" id ="fri.4">수학</a></td>
             </tr>
                 
                 <tr>
@@ -133,30 +349,30 @@
             <tr>
                 <td class="row" scope="row">5교시</td>
                 
-                <td><a href="https://classroom.google.com/c/MjgzOTY2Mjk3OTA1" style="text/css">영어</a></td>
-                <td><a href="https://us02web.zoom.us/j/81920205913?pwd=WFJKditYbzFyd1V1ampsM3hKcng1Zz09" style="test/css">통과</a></td>
-                <td><a href="https://zoom.us/j/9041636076?pwd=YktXamVvZVpFVStBd0QwdXZLd1Z0QT09" style="text/css">수학</a></td>
-                <td><a href="https://zoom.us/j/9219070512?pwd=L0dHT0hkeFNUWXNTSzNoaEQ1NGFldz09" style="text/css">통사</a></td>
-                <td><span style="color:grey">창특</span></td>
+                <td><a href="https://classroom.google.com/c/MjgzOTY2Mjk3OTA1" id ="mon.5">영어</a></td>
+                <td><a href="https://us02web.zoom.us/j/81920205913?pwd=WFJKditYbzFyd1V1ampsM3hKcng1Zz09" id ="tue.5">통과</a></td>
+                <td><a href="https://zoom.us/j/9041636076?pwd=YktXamVvZVpFVStBd0QwdXZLd1Z0QT09" id ="wed.1">수학</a></td>
+                <td><a href="https://zoom.us/j/9219070512?pwd=L0dHT0hkeFNUWXNTSzNoaEQ1NGFldz09"id ="thu.5">통사</a></td>
+                <td><span style="color:grey" id ="fri.5">창특</span></td>
             </tr>
                 
             <tr>
                 <td class="row" scope="row">6교시</td>
                 
-                <td><a href="https://us02web.zoom.us/j/83930270074?pwd=c3VzMmM4NEU2R1FVNitJMVcyalI2QT09" style="text/css">과탐</a></td>
-                <td><span style="color:grey">한문1</span></td>
-                <td><a href="https://classroom.google.com/c/MjgzOTY2Mjk3OTA1" style="text/css">영어</a></td>
-                <td><a href="https://zoom.us/j/96410531025?pwd=ZTBHTjdHSW5UT1hKTDAyYkhhZ0Y5QT09" style="test/css">음악</a></td>
-                <td><span style="color:grey">동아리</span></td>
+                <td><a href="https://us02web.zoom.us/j/83930270074?pwd=c3VzMmM4NEU2R1FVNitJMVcyalI2QT09" id ="mon.6">과탐</a></td>
+                <td><span style="color:grey" id ="tue.6">한문1</span></td>
+                <td><a href="https://classroom.google.com/c/MjgzOTY2Mjk3OTA1" id ="wed.1">영어</a></td>
+                <td><a href="https://zoom.us/j/96410531025?pwd=ZTBHTjdHSW5UT1hKTDAyYkhhZ0Y5QT09" id ="thu.6">음악</a></td>
+                <td><span style="color:grey" id ="fri.6">동아리</span></td>
             </tr>
         
             <tr>
                 <td class="row" scope="row">7교시</td>
                 
-                <td><a href="https://zoom.us/j/9641411259?pwd=cjMxYUFJYXJPQ0FZTGZ4ZEVRcjVmUT09" style="text/css">국어</a></td>
-                <td><a href="https://classroom.google.com/c/MjgzOTY2Mjk3OTA1" style="text/css">영어</a></td>
+                <td><a href="https://zoom.us/j/9641411259?pwd=cjMxYUFJYXJPQ0FZTGZ4ZEVRcjVmUT09" id ="mon.7">국어</a></td>
+                <td><a href="https://classroom.google.com/c/MjgzOTY2Mjk3OTA1" id ="tue.7">영어</a></td>
                 <td></td>
-                <td><a href="https://zoom.us/j/96410531025?pwd=ZTBHTjdHSW5UT1hKTDAyYkhhZ0Y5QT09" style="test/css">음악</a></td>
+                <td><a href="https://zoom.us/j/96410531025?pwd=ZTBHTjdHSW5UT1hKTDAyYkhhZ0Y5QT09" id ="thu.7">음악</a></td>
                 <td></td>
             </tr>
         
