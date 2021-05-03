@@ -84,30 +84,43 @@
                     document.getElementById("mon.4").style.color = "#7868e6";
                     document.getElementById("mon.4").style.fontWeight = "bold";
                     document.getElementById("mon.4").style.background = "#f3f6f7";
-                } else if (hours==13 || minutes>=50){
-                    document.getElementById("mon.5").style.color = "#7868e6";
-                    document.getElementById("mon.5").style.fontWeight = "bold";
-                    document.getElementById("mon.5").style.background = "#f3f6f7";
-                } else if (hours==14 || minutes<=50){
-                    document.getElementById("mon.5").style.color = "#7868e6";
-                    document.getElementById("mon.5").style.fontWeight = "bold";
-                    document.getElementById("mon.5").style.background = "#f3f6f7";
-                } else if (hours==14 || minutes>=50){
-                    document.getElementById("mon.6").style.color = "#7868e6";
-                    document.getElementById("mon.6").style.fontWeight = "bold";
-                    document.getElementById("mon.6").style.background = "#f3f6f7";
-                } else if (hours==15 || minutes<=50){
-                    document.getElementById("mon.6").style.color = "#7868e6";
-                    document.getElementById("mon.6").style.fontWeight = "bold";
-                    document.getElementById("mon.6").style.background = "#f3f6f7";
-                } else if (hours==15 || minutes>=50){
-                    document.getElementById("mon.7").style.color = "#7868e6";
-                    document.getElementById("mon.7").style.fontWeight = "bold";
-                    document.getElementById("mon.7").style.background = "#f3f6f7";
-                } else if (hours==16 || minutes<=50){
-                    document.getElementById("mon.7").style.color = "#7868e6";
-                    document.getElementById("mon.7").style.fontWeight = "bold";
-                    document.getElementById("mon.7").style.background = "#f3f6f7";
+                } else if (hours==13){
+                    if (minutes>=50){
+                        document.getElementById("mon.5").style.color = "#7868e6";
+                        document.getElementById("mon.5").style.fontWeight = "bold";
+                        document.getElementById("mon.5").style.background = "#f3f6f7";
+                    }
+                } else if (hours==14){
+                    if (minutes<50){
+                        document.getElementById("mon.5").style.color = "#7868e6";
+                        document.getElementById("mon.5").style.fontWeight = "bold";
+                        document.getElementById("mon.5").style.background = "#f3f6f7";
+                    }
+                } else if (hours==14){
+                    if (minutes>=50){
+                        document.getElementById("mon.6").style.color = "#7868e6";
+                        document.getElementById("mon.6").style.fontWeight = "bold";
+                        document.getElementById("mon.6").style.background = "#f3f6f7";
+                    }
+                } else if (hours==15){
+                    if (minutes<50){
+                        document.getElementById("mon.6").style.color = "#7868e6";
+                        document.getElementById("mon.6").style.fontWeight = "bold";
+                        document.getElementById("mon.6").style.background = "#f3f6f7";
+                    }
+                } else if (hours==15){
+                    if (minutes>=50){
+                        document.getElementById("mon.7").style.color = "#7868e6";
+                        document.getElementById("mon.7").style.fontWeight = "bold";
+                        document.getElementById("mon.7").style.background = "#f3f6f7";
+                        
+                    }
+                } else if (hours==16){
+                    if (minutes<50){
+                        document.getElementById("mon.7").style.color = "#7868e6";
+                        document.getElementById("mon.7").style.fontWeight = "bold";
+                        document.getElementById("mon.7").style.background = "#f3f6f7"; 
+                    }
                 }
             } else if (day==2){
                 if (hours==9){
